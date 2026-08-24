@@ -22,7 +22,7 @@ const KOMARI_TOKEN = process.env.KOMARI_TOKEN || 'ebnhRZVCrHqVQs6JL0yS8y';
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'railway.aovcc.cyou';
 const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZDRhZWU4NjcwMzE1ZmE1NTU3ZjkxMzlmNTBmNmRlZDciLCJ0IjoiNDU5NzUyMTktYjkzYy00MTNhLTk1OTgtNjM2NmIyYTNjYTEyIiwicyI6Ik9ETmlZbVl3TVRNdE5tRm1NaTAwTmpRd0xUazROMlV0TlRaa05tRTRaV1psWVRVeCJ9';
 const ARGO_PORT = process.env.ARGO_PORT || 8090;
-const CFIP = process.env.CFIP || 'yxsg.lioil.cyou';
+const CFIP = process.env.CFIP || 'sg.ipv4.l.cd';
 const CFPORT = process.env.CFPORT || 443;
 const NAME = process.env.NAME || 'licacv';
 
