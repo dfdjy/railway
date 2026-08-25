@@ -1,16 +1,17 @@
-FROM node:alpine3.20
+FROM node:22-slim
 
-WORKDIR /tmp
+WORKDIR /app
 
-COPY . .
+COPY index.js index.html package.json start.sh ./
 
 EXPOSE 3000/tcp
 
-RUN apk update && apk upgrade &&\
-    apk add --no-cache openssl curl gcompat iproute2 coreutils openssh &&\
-    apk add --no-cache bash &&\
-    ssh-keygen -A &&\
-    chmod +x index.js start.sh &&\
-    npm install
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openssl curl ca-certificates openssh-server iproute2 coreutils bash && \
+    rm -rf /var/lib/apt/lists/* && \
+    mkdir -p /run/sshd && \
+    ssh-keygen -A && \
+    chmod +x index.js start.sh && \
+    npm install --omit=dev
 
 CMD ["./start.sh"]
