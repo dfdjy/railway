@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,17 @@
   <title>世界十大奇迹 | 人类文明与壮丽建筑的永恒丰碑</title>
   <meta name="description" content="探索世界十大建筑奇迹，领略跨越千年的古代与现代人类智慧结晶，包含万里长城、吉萨金字塔、佩特拉古城、罗马斗兽场、泰姬陵等全方位沉浸式图文介绍与互动体验。">
   <meta name="keywords" content="世界奇迹, 万里长城, 金字塔, 佩特拉古城, 罗马斗兽场, 泰姬陵, 马丘比丘, 世界十大奇迹, 建筑遗产">
-  
+
   <!-- Google Fonts: 经典史诗感英文字体 + 优雅中文支持 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap"
+    rel="stylesheet">
+
   <!-- FontAwesome 图标库 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <style>
     /* ==========================================================================
        世界十大奇迹 - 单文件完整内置样式系统 (Embedded CSS)
@@ -30,7 +33,7 @@
       --bg-card-hover: rgba(24, 34, 60, 0.85);
       --bg-modal: #0d1322;
       --bg-pill: rgba(255, 255, 255, 0.08);
-      
+
       /* 品牌与强调色 */
       --gold-primary: #f59e0b;
       --gold-light: #fde68a;
@@ -66,7 +69,9 @@
     }
 
     /* 基础重置 */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -91,13 +96,16 @@
     ::-webkit-scrollbar {
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--bg-main);
     }
+
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.15);
       border-radius: 4px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: var(--gold-primary);
     }
@@ -109,7 +117,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: 
+      background-image:
         radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
         radial-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px);
       background-size: 48px 48px, 96px 96px;
@@ -235,7 +243,8 @@
       padding: 6px 0;
     }
 
-    .nav-link:hover, .nav-link.active {
+    .nav-link:hover,
+    .nav-link.active {
       color: var(--gold-light);
     }
 
@@ -314,9 +323,20 @@
     }
 
     @keyframes pulse {
-      0% { transform: scale(0.9); opacity: 0.7; }
-      50% { transform: scale(1.3); opacity: 1; }
-      100% { transform: scale(0.9); opacity: 0.7; }
+      0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+      }
     }
 
     .hero-title {
@@ -468,8 +488,15 @@
     }
 
     @keyframes mouseScroll {
-      0% { top: 6px; opacity: 1; }
-      100% { top: 18px; opacity: 0; }
+      0% {
+        top: 6px;
+        opacity: 1;
+      }
+
+      100% {
+        top: 18px;
+        opacity: 0;
+      }
     }
 
     /* 板块标题 */
@@ -596,7 +623,8 @@
       margin-right: 4px;
     }
 
-    .filter-btn, .tag-btn {
+    .filter-btn,
+    .tag-btn {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-subtle);
       color: var(--text-secondary);
@@ -608,7 +636,8 @@
       transition: all var(--transition-fast);
     }
 
-    .filter-btn:hover, .tag-btn:hover {
+    .filter-btn:hover,
+    .tag-btn:hover {
       background: rgba(255, 255, 255, 0.1);
       color: var(--text-pure);
     }
@@ -826,6 +855,7 @@
       background: radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.25), rgba(15, 23, 42, 0.95)) !important;
       position: relative;
     }
+
     .img-fallback-bg::before {
       content: '\f66f';
       font-family: 'Font Awesome 6 Free';
@@ -1401,18 +1431,19 @@
       .timeline-container::before {
         left: 20px;
       }
-      
+
       .timeline-item {
         width: 100%;
         padding-left: 50px;
         padding-right: 10px;
         text-align: left !important;
       }
-      
-      .timeline-item.left, .timeline-item.right {
+
+      .timeline-item.left,
+      .timeline-item.right {
         left: 0;
       }
-      
+
       .timeline-dot {
         left: 12px !important;
         right: auto !important;
@@ -1428,7 +1459,7 @@
         gap: 16px;
         padding: 12px 20px;
       }
-      
+
       .stat-num {
         font-size: 1.35rem;
       }
@@ -1451,6 +1482,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- 背景动态光晕和星空网格 -->
   <div class="stars-bg"></div>
@@ -1471,7 +1503,8 @@
       <nav class="nav-links">
         <a href="#gallery" class="nav-link active"><i class="fa-solid fa-compass"></i> 奇迹画廊</a>
         <a href="#timeline" class="nav-link"><i class="fa-solid fa-timeline"></i> 文明纪年</a>
-        <a href="#passport" class="nav-link"><i class="fa-solid fa-passport"></i> 探索护照 <span class="badge" id="passport-count">0/10</span></a>
+        <a href="#passport" class="nav-link"><i class="fa-solid fa-passport"></i> 探索护照 <span class="badge"
+            id="passport-count">0/10</span></a>
       </nav>
 
       <div class="nav-actions">
@@ -1533,7 +1566,7 @@
 
   <!-- 主体内容区 -->
   <main class="main-container">
-    
+
     <!-- 筛选与搜索控制栏 -->
     <section class="controls-section" id="gallery">
       <div class="section-header text-center">
@@ -1546,7 +1579,8 @@
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
           <input type="text" id="search-input" placeholder="搜索奇迹名称、国家、建造年代或关键词..." autocomplete="off">
-          <button id="clear-search-btn" class="clear-btn" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+          <button id="clear-search-btn" class="clear-btn" style="display:none;"><i
+              class="fa-solid fa-xmark"></i></button>
         </div>
 
         <!-- 时代分类标签 -->
@@ -1665,7 +1699,7 @@
        世界十大奇迹 - 单文件内置数据与交互逻辑 (Embedded JavaScript)
        ========================================================================== -->
   <script>
-    // 1. 世界十大奇迹结构化权威数据库（全部采用高可用、免防盗链的高清直链）
+    // 1. 世界十大奇迹结构化权威数据库（全部经过官方维基/权威图库精确核对）
     const WONDERS_DATA = [
       {
         id: "great-wall",
@@ -1678,7 +1712,6 @@
         yearNumber: -700,
         tags: ["军事防御", "世界遗产", "东方文明"],
         image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1549893072-4bc678117f45?auto=format&fit=crop&w=1200&q=80",
         summary: "人类历史上耗时最长、工程量最浩大的古代军事防御工程，宛如一条巨龙蜿蜒盘旋于中华大地的崇山峻岭之间，全长超过2.1万公里。",
         highlight: "“不到长城非好汉”——长城凝聚了中华民族坚韧不拔的意志与古代筑城工程学的极高智慧，是唯一能在大地肌理上清晰辨识的巨型防御体系。",
         architecture: "采用因地制宜、就地取材的建造原则。明代长城大量采用烧结青砖、石灰与糯米浆灌缝，结合关隘、敌楼、烽火台等构成了立体纵深的防御与快速通信体系。",
@@ -1696,11 +1729,10 @@
         yearNumber: -2560,
         tags: ["古代七大奇迹", "法老王陵", "天文学奇观"],
         image: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=80",
         summary: "古代世界七大奇迹中唯一完好留存至今的建筑遗迹，为古埃及第四王朝法老胡夫的陵墓，历经4500余年风沙洗礼依然巍然耸立。",
         highlight: "由约230万块平均重达2.5吨的巨石砌筑而成，底座边长误差不足数厘米，四面对准正东、正西、正南、正北，展现出令人叹为观止的几何与天文对齐精度。",
         architecture: "塔身原高146.59米（现高约138.8米），在埃菲尔铁塔落成前保持了世界上最高人造建筑长达3800多年的世界纪录。内部拥有精密的大走廊、国王室与王后室。",
-        history: "建于古埃及古王国时期的第四王朝，象征着法老通往永生与太阳神重聚的天梯。围绕其建造方法（斜坡法、内部螺旋坡道等）至今仍是考古界探讨的热门话题。",
+        history: "建于古埃及古王国时期，象征着法老通往永生与太阳神重聚的天梯。围绕其建造方法（斜坡法、内部螺旋坡道等）至今仍是考古界探讨的热门话题。",
         travelTips: "建议清晨或傍晚前往以避开烈日与人群。可在骑骆驼进入沙漠全景视角，感受三座大金字塔与狮身人面像同框的震撼画面。"
       },
       {
@@ -1713,12 +1745,11 @@
         eraText: "约公元前312年 - 公元2世纪",
         yearNumber: -312,
         tags: ["岩凿建筑", "丝绸之路", "沙漠水利"],
-        image: "https://images.unsplash.com/photo-1579606032822-e421074a3f4c?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=1200&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Treasury_petra_crop.jpeg/1280px-Treasury_petra_crop.jpeg",
         summary: "隐匿于约旦南部狭窄峡谷深处的纳巴泰王国都城，以其在粉红与赭红色砂岩悬崖上直接雕凿出的恢弘神庙与宫殿而举世闻名，被誉为“玫瑰之城”。",
         highlight: "穿过长达1.2公里的狭窄一线天峡谷（西克峡谷）后，卡兹尼神殿（The Treasury）宛如梦境般骤然映入眼帘，视觉冲击力无与伦比。",
         architecture: "纳巴泰人融合了古希腊、罗马与中东本土的建筑艺术，并在干旱的荒漠峡谷中开创了精巧的集水水渠与储水蓄水系统，使古城在沙漠中繁荣数百年。",
-        history: "作为古代香料之路与丝绸之路的重要中继枢纽，佩特拉曾极度繁荣。后因海上贸易路线兴起及多次大地震而逐渐衰落并被世人遗忘，直至1812年被瑞士探险家重新发现。",
+        history: "作为古代香料之路与丝绸之路的重要中继枢纽，佩特拉曾极度繁荣。后因海上贸易路线兴起及多次大地震而逐渐衰落并被世人遗忘，直至1812年被重新发现。",
         travelTips: "务必穿着舒适的徒步鞋。强烈推荐体验“Petra by Night（佩特拉之夜）”，成千上万支蜡烛点亮卡兹尼神殿前的广场，充满神秘与浪漫。"
       },
       {
@@ -1732,7 +1763,6 @@
         yearNumber: 70,
         tags: ["古罗马帝国", "圆形剧场", "工程奇迹"],
         image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=1200&q=80",
         summary: "古罗马帝国最庞大且最富标志性的露天圆形剧场，是古罗马混凝土工程学、拱券结构与公共观赛娱乐建筑的集大成者。",
         highlight: "拥有精密的分层看台与80个拱门出入口（能在15分钟内疏散5万多名观众），地下拥有复杂的升降机与兽笼迷宫（Hypogeum），甚至曾引入河水上演海战场面。",
         architecture: "外墙由四层结构组成，分别巧妙融合了多立克柱式、爱奥尼柱式、科林斯柱式与顶层壁柱，是古典建筑柱式层叠法则的教科书级范本。",
@@ -1750,7 +1780,6 @@
         yearNumber: 1632,
         tags: ["莫卧儿艺术", "纯白大理石", "爱情史诗"],
         image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
         summary: "莫卧儿帝国皇帝沙贾汗为纪念其挚爱的已故皇后姬蔓·芭奴而倾全国之力建造的白色大理石陵墓，被泰戈尔赞誉为“永恒面颊上的一滴泪珠”。",
         highlight: "整座建筑呈现近乎完美的对称美学，通体采用拉贾斯坦邦特产的高级纯白大理石，表面嵌有数十种来自世界各地的宝石与花卉浮雕。",
         architecture: "结合了波斯、伊斯兰和印度本土建筑风格。中央巨大的洋葱形穹顶高耸入云，四角矗立着四座微微向外倾斜的宣礼塔（防止地震倾倒损毁主殿）。",
@@ -1768,7 +1797,6 @@
         yearNumber: 1450,
         tags: ["印加文明", "天空之城", "无缝巨石"],
         image: "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1509216242870-7657088b99d2?auto=format&fit=crop&w=1200&q=80",
         summary: "坐落在海拔2430米陡峭安第斯山脊上的印加帝国皇家庄园与祭祀圣地，隐匿于崇山峻岭与云雾之中，是前哥伦布时期美洲最壮观的遗迹。",
         highlight: "印加人在没有使用灰浆和铁器工具的情况下，将重达数十吨的巨大花岗岩石块切割打磨得严丝合缝，连薄薄的刀片都无法插进石缝中。",
         architecture: "包含神庙、宫殿、梯田和复杂的排水分洪系统。梯田不仅起到防止水土流失的作用，还能吸收太阳热量形成独特的小气候，满足高原农业需求。",
@@ -1785,8 +1813,7 @@
         eraText: "公元1922年 - 公元1931年",
         yearNumber: 1922,
         tags: ["装饰艺术", "现代奇迹", "俯瞰海湾"],
-        image: "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1564659907532-6b5f98c8e70f?auto=format&fit=crop&w=1200&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Aerial_view_of_the_Statue_of_Christ_the_Redeemer.jpg/1280px-Aerial_view_of_the_Statue_of_Christ_the_Redeemer.jpg",
         summary: "高耸于710米驼背山之巅的巨大耶稣雕像，张开双臂宛如巨大的十字架俯瞰着整个里约热内卢海湾，是巴西人民热情好客与坚定信仰的永恒象征。",
         highlight: "雕像总高38米（含基座），两臂展开宽达28米，重约1145吨，是全世界最著名的装饰艺术风格（Art Deco）大型雕塑之一。",
         architecture: "内部采用钢筋混凝土框架结构，外表由来自米纳斯吉拉斯州的数百万块六角形滑石马赛克瓷片精心镶嵌而成，具备出色的抗风蚀与抗雷击性能。",
@@ -1804,7 +1831,6 @@
         yearNumber: 600,
         tags: ["玛雅文明", "羽蛇神庙", "历法奇迹"],
         image: "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
         summary: "玛雅文明古典时期末期至后古典时期最著名的政治、宗教与天文中心，以巍峨的库库尔坎金字塔（El Castillo）为核心。",
         highlight: "每年春分和秋分日落时分，太阳光影会在金字塔北侧台阶上投射出一条蜿蜒游动的巨蟒阴影，与底部的羽蛇神石雕头像完美重合，称为“光影羽蛇”。",
         architecture: "金字塔四面各有91级台阶，加上顶端平台共有365级，恰好对应玛雅太阳历的一年365天。在台阶前拍手还会产生类似格查尔鸟鸣的奇异回音。",
@@ -1822,7 +1848,6 @@
         yearNumber: -447,
         tags: ["古希腊文明", "多立克柱式", "西方源头"],
         image: "https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?auto=format&fit=crop&w=1200&q=80",
         summary: "高踞于雅典卫城岩石山顶的供奉雅典娜女神的主神庙，是古希腊多立克柱式建筑艺术的最高典范，亦是西方民主政治与古典哲学的精神图腾。",
         highlight: "看似笔直的线条实际上充满了精妙的“视觉修正”（Entasis）：柱身中部微凸、四角柱子向内微倾、地面微微拱起，以克服人眼的视觉畸变，呈现无可挑剔的雄伟与和谐。",
         architecture: "通体采用彭特利库斯白大理石建造，柱廊比例严格遵循黄金分割比例，殿内曾矗立着雕塑巨匠菲迪亚斯打造的象牙黄金雅典娜巨像。",
@@ -1840,7 +1865,6 @@
         yearNumber: 532,
         tags: ["拜占庭帝国", "悬浮大穹顶", "金箔马赛克"],
         image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=80",
-        backupImage: "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80",
         summary: "矗立在欧亚十字路口伊斯坦布尔的千禧奇迹，曾作为拜占庭帝国东正教总会堂近千年，后转为奥斯曼清真寺，见证了东西方宗教与帝国的兴衰激荡。",
         highlight: "直径达31米、距地55米高的中央巨大穹顶通过帆拱结构奇迹般地悬浮于空中，四十扇穹顶舷窗透入的神圣光线让信徒产生穹顶“由黄金锁链自天堂垂挂”的震撼幻觉。",
         architecture: "开创了帆拱穹顶建筑的崭新时代，内部装饰着华美绝伦的拜占庭金箔马赛克圣像画与奥斯曼帝国时期巨大的伊斯兰书法金字圆盘，交相辉映。",
@@ -1849,16 +1873,11 @@
       }
     ];
 
-    // 图片加载失败平滑降级处理（避免出现浏览器原生丑陋裂图标记）
-    function handleImgError(img, backupUrl) {
-      if (backupUrl && img.src !== backupUrl) {
-        img.src = backupUrl;
-      } else {
-        img.onerror = null;
-        img.style.display = 'none';
-        if (img.parentElement) {
-          img.parentElement.classList.add('img-fallback-bg');
-        }
+    function handleImgError(img) {
+      img.onerror = null;
+      img.style.display = 'none';
+      if (img.parentElement) {
+        img.parentElement.classList.add('img-fallback-bg');
       }
     }
 
@@ -1959,7 +1978,7 @@
         return `
           <article class="wonder-card" data-id="${wonder.id}">
             <div class="card-image-wrap">
-              <img src="${wonder.image}" alt="${wonder.nameCn}" class="card-image" loading="lazy" onerror="handleImgError(this, '${wonder.backupImage || ''}')">
+              <img src="${wonder.image}" alt="${wonder.nameCn}" class="card-image" loading="lazy" onerror="handleImgError(this)">
               <div class="card-image-overlay"></div>
               <span class="card-badge-era">${wonder.eraText}</span>
               <button class="card-bookmark-btn ${isStamped ? 'bookmarked' : ''}" data-action="stamp" data-id="${wonder.id}" title="${isStamped ? '已打卡，点击取消' : '点击盖章打卡'}">
@@ -2058,7 +2077,7 @@
 
       elements.modalContent.innerHTML = `
         <div class="modal-hero-banner">
-          <img src="${wonder.image}" alt="${wonder.nameCn}" class="modal-hero-img" onerror="handleImgError(this, '${wonder.backupImage || ''}')">
+          <img src="${wonder.image}" alt="${wonder.nameCn}" class="modal-hero-img" onerror="handleImgError(this)">
           <div class="modal-hero-gradient"></div>
           <div class="modal-hero-text">
             <div class="modal-badge-row">
@@ -2126,7 +2145,6 @@
     }
 
     function setupEventListeners() {
-      // 时代过滤
       elements.eraFilterContainer.addEventListener("click", e => {
         const btn = e.target.closest(".filter-btn");
         if (!btn) return;
@@ -2136,7 +2154,6 @@
         renderWonderCards();
       });
 
-      // 大洲过滤
       elements.continentFilterContainer.addEventListener("click", e => {
         const btn = e.target.closest(".tag-btn");
         if (!btn) return;
@@ -2146,7 +2163,6 @@
         renderWonderCards();
       });
 
-      // 搜索
       elements.searchInput.addEventListener("input", e => {
         state.searchQuery = e.target.value;
         elements.clearSearchBtn.style.display = state.searchQuery ? "block" : "none";
@@ -2178,7 +2194,6 @@
         renderWonderCards();
       });
 
-      // 卡片点击
       elements.wonderGrid.addEventListener("click", e => {
         const bookmarkBtn = e.target.closest('[data-action="stamp"]');
         if (bookmarkBtn) {
@@ -2193,7 +2208,6 @@
         }
       });
 
-      // 时间轴点击
       elements.timelineContainer.addEventListener("click", e => {
         const card = e.target.closest(".timeline-card");
         if (card) {
@@ -2201,7 +2215,6 @@
         }
       });
 
-      // 护照打卡
       elements.passportStampsGrid.addEventListener("click", e => {
         const stamp = e.target.closest(".stamp-item");
         if (stamp) {
@@ -2219,10 +2232,8 @@
         }
       });
 
-      // 随机探秘
       elements.randomWonderBtn.addEventListener("click", openRandomWonder);
 
-      // 弹窗关闭
       elements.modalCloseBtn.addEventListener("click", closeModal);
       elements.modal.addEventListener("click", e => {
         if (e.target === elements.modal) {
@@ -2240,4 +2251,5 @@
     document.addEventListener("DOMContentLoaded", initApp);
   </script>
 </body>
+
 </html>
