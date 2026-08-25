@@ -16,25 +16,25 @@ const UPLOAD_URL = process.env.UPLOAD_URL || '';      // 节点或订阅自动�
 const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或保活时需填写项目分配的url,例如：https://google.com
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
 const FILE_PATH = process.env.FILE_PATH || '.tmp';    // 运行目录,sub节点文件保存目录
-const SUB_PATH = process.env.SUB_PATH || 'licacv188';       // 订阅路径
+const SUB_PATH = process.env.SUB_PATH || 'fnGemnmQ';       // 订阅路径
 // HTTP 端口配置（当 PORT 环境变量与 SSH 端口 22 冲突时自动使用 8080）
 let httpPort = process.env.SERVER_PORT || process.env.PORT || 8080;
 if (String(httpPort) === '22' || String(httpPort) === String(process.env.SSH_PORT || '22')) {
   httpPort = process.env.SERVER_PORT || 8080;
 }
 const PORT = httpPort;
-const UUID = process.env.UUID || '5a576813-f267-4dff-85ad-beb73717e446'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || 'ed415007-a70f-40e8-9935-9e9ae8097ac5'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const KOMARI_ENDPOINT = process.env.KOMARI_ENDPOINT || 'https://komari.lioil.art';  // Komari 监控端点地址
-const KOMARI_TOKEN = process.env.KOMARI_TOKEN || 'ebnhRZVCrHqVQs6JL0yS8y';        // Komari 认证 Token
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'railway.aovcc.cyou';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZDRhZWU4NjcwMzE1ZmE1NTU3ZjkxMzlmNTBmNmRlZDciLCJ0IjoiNDU5NzUyMTktYjkzYy00MTNhLTk1OTgtNjM2NmIyYTNjYTEyIiwicyI6Ik9ETmlZbVl3TVRNdE5tRm1NaTAwTmpRd0xUazROMlV0TlRaa05tRTRaV1psWVRVeCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8090;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const KOMARI_TOKEN = process.env.KOMARI_TOKEN || 'mhe2Uv35DNr1Hmx04p8GHB';        // Komari 认证 Token
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'eu.aovcc.cyou';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZDRhZWU4NjcwMzE1ZmE1NTU3ZjkxMzlmNTBmNmRlZDciLCJ0IjoiMjAwNzRmNmQtNTI0ZC00ZmM1LWFlZDYtNWZiNmUzMjhjNjM0IiwicyI6Ill6TXlNakF5WWpFdE4yVmxNQzAwTlRFMExXSTFNVFV0TnpVNU5EWXlObVk0WmpFMCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8002;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const S5_PORT = process.env.S5_PORT || '';                  // socks5端口，支持多端口的可以填写，否则留空
 const HY2_PORT = process.env.HY2_PORT || '';                // hy2端口，支持多端口的可以填写，否则留空
 const REALITY_PORT = process.env.REALITY_PORT || '';        // reality端口，支持多端口的可以填写，否则留空
-const CFIP = process.env.CFIP || 'sg.ipv4.l.cd';            // 节点优选域名或优选ip
+const CFIP = process.env.CFIP || 'cdns.doon.eu.org';            // 节点优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'licacv';                        // 节点名称
+const NAME = process.env.NAME || 'fnGemnmQ';                        // 节点名称
 const CHAT_ID = process.env.CHAT_ID || '';                  // Telegram chat_id  两个变量不全不推送节点到TG 
 const BOT_TOKEN = process.env.BOT_TOKEN || '';              // Telegram bot_token 两个变量不全不推送节点到TG 
 const SHOW_LOG = !['false', 'disable', 'no'].includes((process.env.SHOW_LOG || 'true').toLowerCase()); // 是否显示日志输出，true/yes显示，false/disable/no屏蔽，默认显示
