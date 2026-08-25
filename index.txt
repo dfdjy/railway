@@ -17,7 +17,12 @@ const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或�
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
 const FILE_PATH = process.env.FILE_PATH || '.tmp';    // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'licacv188';       // 订阅路径
-const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
+// HTTP 端口配置（当 PORT 环境变量与 SSH 端口 22 冲突时自动使用 8080）
+let httpPort = process.env.SERVER_PORT || process.env.PORT || 8080;
+if (String(httpPort) === '22' || String(httpPort) === String(process.env.SSH_PORT || '22')) {
+  httpPort = process.env.SERVER_PORT || 8080;
+}
+const PORT = httpPort;
 const UUID = process.env.UUID || '5a576813-f267-4dff-85ad-beb73717e446'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const KOMARI_ENDPOINT = process.env.KOMARI_ENDPOINT || 'https://komari.lioil.art';  // Komari 监控端点地址
 const KOMARI_TOKEN = process.env.KOMARI_TOKEN || 'ebnhRZVCrHqVQs6JL0yS8y';        // Komari 认证 Token
